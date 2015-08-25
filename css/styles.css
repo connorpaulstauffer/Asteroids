@@ -7,5 +7,5 @@ html, body, canvas {
 
 #game-canvas {
   /*background-color: black;*/
-  background-image: url("http://i.ytimg.com/vi/qbzFSfWwp-w/maxresdefault.jpg")
+  background-image: url("../assets/star-background.jpg");
 }
