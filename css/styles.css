@@ -1,0 +1,11 @@
+html, body, canvas {
+  padding: 0px;
+  margin: 0px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+#game-canvas {
+  /*background-color: black;*/
+  background-image: url("http://i.ytimg.com/vi/qbzFSfWwp-w/maxresdefault.jpg")
+}
