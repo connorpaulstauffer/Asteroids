@@ -1,3 +1,11 @@
+* {
+  list-style: none;
+  text-decoration: none;
+  font-smooth: never;
+  -webkit-font-smoothing : none;
+  font-family: 'Press Start 2P', cursive;
+}
+
 html, body, canvas {
   padding: 0px;
   margin: 0px;
@@ -5,7 +13,81 @@ html, body, canvas {
   overflow-y: hidden;
 }
 
+body {
+  background-color: black;
+}
+
+/*canvas {
+  height: 100%;
+  width: 100%;
+}*/
+
+#root {
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: thick solid white;
+}
+
 #game-canvas {
-  /*background-color: black;*/
   background-image: url("../assets/star-background.jpg");
+  height: 100%;
+  width: 100%;
+}
+
+.hidden {
+  display: none;
+}
+
+#welcome-screen {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+#welcome-screen h1 {
+  font-size: 50px;
+}
+
+#welcome-screen a {
+  color: white;
+  font-size: 30px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 20px;
+}
+
+#scores {
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  font-size: 20px;
+}
+
+#scores th {
+  padding-right: 40px;
+}
+
+#scores tr > td {
+  padding-top: 15px;
+  padding-right: 50px;
 }
