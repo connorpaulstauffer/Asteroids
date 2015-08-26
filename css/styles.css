@@ -114,14 +114,23 @@ li {
 }
 
 #game-over {
+  padding-top: 30px;
+  padding-bottom: 30px;
   border: solid white;
   background-color: black;
   position: absolute;
   width: 50%;
-  height: 50%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+  color: white;
+}
+
+#game-over h1 {
+  margin-top: 0;
+}
+
+#game-over a {
   color: white;
 }

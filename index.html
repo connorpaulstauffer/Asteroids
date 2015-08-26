@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Asteroids!</title>
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.js"></script>
+    <script src="lib/underscore-min.js"></script>
     <script src='lib/utils.js'></script>
     <script src='lib/movingObject.js'></script>
     <script src='lib/asteroid.js'></script>
@@ -22,21 +23,23 @@
         <h1>ASTEROIDS!</h1>
         <ul>
           <li><a href="javascript:void(0)" id="start-game">Play</a></li>
-          <li><a href="javascript:void(0)" id="high-scores">High Scores</a></li>
+          <!-- <li><a href="javascript:void(0)" id="high-scores">High Scores</a></li> -->
         </ul>
       </div>
 
       <div id="game-over" class="hidden">
         <h1>GAME OVER!</h1>
         <p>You scored <span id="final-score"></span></p>
-        <form>
+        <a href="javascript:void(0)" id="back"><<< Back</a>
+
+        <!-- <form>
           <label for="player-name">Name:</label>
           <input type="text" id="player-name">
-          <button>Submit</button>          
-        </form>
+          <button id="submit-score">Submit</button>
+        </form> -->
       </div>
 
-      <div id="scores" class="hidden">
+      <!-- <div id="scores" class="hidden">
         <table>
           <tr>
             <th></th>
@@ -46,66 +49,18 @@
 
           <tr>
             <td>1</td>
-            <td></td>
-            <td></td>
+            <td class="name">Connor</td>
+            <td class="score">200</td>
           </tr>
 
           <tr>
             <td>2</td>
-            <td></td>
-            <td></td>
-          </tr>
-
-          <tr>
-            <td>3</td>
-            <td></td>
-            <td></td>
-          </tr>
-
-          <tr>
-            <td>4</td>
-            <td></td>
-            <td></td>
-          </tr>
-
-          <tr>
-            <td>5</td>
-            <td></td>
-            <td></td>
-          </tr>
-
-          <tr>
-            <td>6</td>
-            <td></td>
-            <td></td>
-          </tr>
-
-          <tr>
-            <td>7</td>
-            <td></td>
-            <td></td>
-          </tr>
-
-          <tr>
-            <td>8</td>
-            <td></td>
-            <td></td>
-          </tr>
-
-          <tr>
-            <td>9</td>
-            <td></td>
-            <td></td>
-          </tr>
-
-          <tr>
-            <td>10</td>
-            <td></td>
-            <td></td>
+            <td class="name">Nolan</td>
+            <td class="score">190</td>
           </tr>
         </table>
         <a href="javascript:void(0)" id="back"><<< Back</a>
-      </div>
+      </div> -->
 
       <canvas id="game-canvas"></canvas>
 
