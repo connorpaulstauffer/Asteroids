@@ -26,6 +26,16 @@
         </ul>
       </div>
 
+      <div id="game-over" class="hidden">
+        <h1>GAME OVER!</h1>
+        <p>You scored <span id="final-score"></span></p>
+        <form>
+          <label for="player-name">Name:</label>
+          <input type="text" id="player-name">
+          <button>Submit</button>          
+        </form>
+      </div>
+
       <div id="scores" class="hidden">
         <table>
           <tr>
@@ -94,8 +104,18 @@
             <td></td>
           </tr>
         </table>
+        <a href="javascript:void(0)" id="back"><<< Back</a>
       </div>
+
       <canvas id="game-canvas"></canvas>
+
+      <div class="game-view hidden" id="lives-container">
+        Lives: <span id="lives"></span>
+      </div>
+
+      <div class="game-view hidden" id="score-container">
+        Score: <span id="score"></span>
+      </div>
     </div>
   </body>
 </html>

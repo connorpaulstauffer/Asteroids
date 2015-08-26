@@ -78,9 +78,12 @@ li {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  text-align: center;
   color: white;
   font-size: 20px;
+}
+
+#scores table {
+  padding: 10px;
 }
 
 #scores th {
@@ -90,4 +93,35 @@ li {
 #scores tr > td {
   padding-top: 15px;
   padding-right: 50px;
+}
+
+#scores a {
+  color: white;
+}
+
+#lives-container {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: white;
+}
+
+#score-container {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: white;
+}
+
+#game-over {
+  border: solid white;
+  background-color: black;
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
 }
