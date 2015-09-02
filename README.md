@@ -17,3 +17,8 @@ Javascript implementation of the popular browser game, Asteroids.
   Javascript.
   * [Asteroids][asteroid], [bullets][bullet], and [ship][ship] inherit from
   [moving object][moving] class, overriding methods as necessary.
+
+[ship]: ./lib/ship.js
+[asteroid]: ./lib/asteroid.js
+[bullet]: ./lib/bullet.js
+[moving]: ./lib/movingObject.js
