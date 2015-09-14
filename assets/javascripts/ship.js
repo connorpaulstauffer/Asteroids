@@ -13,7 +13,7 @@ $(function() {
   Asteroids.Util.inherits(Asteroids.Ship, Asteroids.MovingObject);
 
   Ship.prototype.relocate = function() {
-    this.pos = this.game.randomPos();
+    this.pos = this.game.randomUnoccupiedPos(this.radius);
     this.vel = [0, 0];
   };
 

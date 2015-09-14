@@ -62,6 +62,24 @@ $(function() {
     return [posX, posY];
   };
 
+  Game.prototype.randomUnoccupiedPos = function(n) {
+    var pos = this.randomPos();
+    while (this.isAsteroid(pos, n)) {
+      pos = this.randomPos();
+    }
+    return pos;
+  };
+
+  Game.prototype.isAsteroid = function(pos, n) {
+    for (var i = 0; i < this.asteroids.length; i++) {
+      var asteroid = this.asteroids[i];
+      if (Asteroids.Util.dist(asteroid.pos, pos) < n + asteroid.radius) {
+        return true;
+      }
+    }
+    return false;
+  };
+
   Game.prototype.draw = function(ctx) {
     ctx.clearRect(0, 0, Game.DIM_X, Game.DIM_Y);
     this.allObjects().forEach(function (obj) {
